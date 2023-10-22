@@ -1,0 +1,148 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #393E46;
+}
+
+.container{
+    text-align: center;
+    margin: auto;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    color: #4ECCA3;
+}
+
+h2{
+    font-size: 2rem;
+    color: #4ECCA3;
+    font-family: 'Indie Flower', cursive;
+}
+
+.name > input{
+    border: 1px solid black;
+    text-overflow: ellipsis;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.result{
+    visibility: hidden;
+    width: 40%;
+    height: auto;
+}
+
+.blocks{
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.buttons{
+    margin-top: 50px;
+    display: flex;  
+    height: 100px;
+    justify-content: center;
+    gap: 100px;
+}
+
+.buttons > button{
+    width: 150px;
+    background-color: transparent;
+    color: #4ECCA3;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+    border: 5px solid #4ECCA3;
+    border-radius: 15%;
+}
+
+button:hover{
+    transition-duration: 0.5s;
+    background-color: #4ECCA3;
+    color: #393E46;
+}
+
+.score{
+    margin-top: 50px  ;
+    margin-left: 30%;
+    width: 40%;
+    height: 170px;
+    display: grid;
+    background-color: #4ECCA3;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 5px;  
+    border: 5px solid #4ECCA3;
+}
+
+.score > div {
+    background-color: #393E46;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    color: #4ECCA3;
+}
+
+.heading{
+    grid-column: span 2;
+}
+
+.result{
+    display: flex;
+    margin-left: 30%;
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+    justify-content: center;
+    align-items: center;
+    color: #4ECCA3;
+}
+
+hr{
+    margin-top: 10px;
+}
+
+footer{
+    font-size: 1.25rem;
+    text-align: center;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}
+
+@media (max-width:480px){
+
+    .blocks{
+        justify-content: space-around;
+        gap: 0;
+    }
+    .buttons{
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .buttons > button{
+        width: 100px;
+        font-size: 1.4rem;
+    }
+
+    .score{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .score >div{
+        font-size: 1.4rem;
+    }
+    
+    img{
+        width: 150px;
+        height: 150px;
+    }
+}

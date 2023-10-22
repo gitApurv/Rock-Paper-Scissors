@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock Paper Scissors</title>
+        <link href="./style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Rock Paper Scissors</h1>
+            <div class="name">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+                <div class="result"></div>
+            <div class="blocks">
+                <div class="you player">
+                    <h2>Name</h2>
+                    <img id="imgy" src="./images/you.png">
+                </div>
+
+                <div class="comp player">
+                    <h2>Computer</h2>
+                    <img id="imgc" src="./images/bot.png">
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" class="button" onclick="clicked('rock')">Rock</button>
+                <button type="button" class="button" onclick="clicked('paper')">Paper</button>
+                <button type="button" class="button" onclick="clicked('scissor')">Scissor</button>
+            </div>
+            <div class="score">
+                <div class="heading">Scorecard</div>
+                <div class="yourName">Name</div>
+                <div class="compName">Computer</div>
+                <div class="yourScore">0</div>
+                <div class="compScore">0</div>
+            </div>
+        </div>
+        <hr>
+        <footer>@Apurv Maurya</footer>
+        <script src="./index.js"></script>
+    </body>
+</html>
